@@ -114,6 +114,8 @@
       text-align: center;
     }
     .drama{
+      width: 100%;
+      height: auto;
       margin: 0px auto;
       padding: 5px;
     }
