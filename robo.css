@@ -68,7 +68,7 @@
     height: inherit;
   }
   .name{
-    font-size: 126px;
+    font-size: 240px;
     color: white;
     text-align: center;
     position: relative;
@@ -80,7 +80,7 @@
     color:#27292d;
   }
   .second{
-    padding: 15px;
+    padding: 36px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
