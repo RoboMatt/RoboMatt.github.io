@@ -1,0 +1,249 @@
+<html>
+<head>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <!-- <script language="javascript" type="text/javascript" src="sketch.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,500" rel="stylesheet">
+
+</head>
+<body>
+  <div class="land">
+    <div class="c1">
+      <h1 class="title">Hi, My Name's<br /><span class="name">Matt.</span></h1><br />
+      <p class="sub"><!--I am a novice programmer and engineering enthusiast,<br /> but there is much more to me than that. <br />-->Scroll down and let's get to know each other.</p>
+    </div>
+  </div>
+
+  <div class="box">
+  </div>
+
+  <div>
+    <h1 class="me">About Me</h1>
+    <h3 class="hov">Hover over the boxes to learn more!</h3>
+  </div>
+
+  <!--my personal stuff  -->
+  <div class="dad">
+    <div class="code">
+      <h3 class="header">Coding</h3>
+      Coding is a skill that while I am by no means proficient or a master at, I thoroughly enjoy both practicing and learning. My skills are based in web development, and my largest project is the Griswold Drama website design and maintainence, a project seen by over 3000 people annually. Visit it <a href="http://griswolddrama.com">here</a> and the Extra page <a href="http://griswolddrama.com/extra">here</a>
+      <!-- Lorem ipsum dolor sit amet, quot dolor repudiandae an per, justo facilisis no eam. Dolore nonumy salutandi ad usu, cu vel dico nusquam. Ea eos mundi everti definitionem, unum novum phaedrum nam ut. Similique vituperata disputationi vim id, cu sit eligendi periculis. Reque inani pri ex, nobis deleniti eum ut. -->
+    </div>
+    <div class="math">
+      <h3 class="header">Engineering</h3>
+      Engineering is the career field which I plan to pursue after college, specifically computer and electrical engineering. I have had small introductions to this field, with things such as calculus and physics classes, and personal projects with Raspberry Pi's and Arudino's, and have very much so enjoyed it.
+      <!-- Lorem ipsum dolor sit amet, quot dolor repudiandae an per, justo facilisis no eam. Dolore nonumy salutandi ad usu, cu vel dico nusquam. Ea eos mundi everti definitionem, unum novum phaedrum nam ut. Similique vituperata disputationi vim id, cu sit eligendi periculis. Reque inani pri ex, nobis deleniti eum ut. -->
+    </div>
+    <div class="run">
+      <h3 class="header">Running</h3>
+      Running  is something that I started off hating, but in 2016 decided to give a chance. Now it is one of my favorite activities, and one of my proudest accomplishments. School always came easy to me, but sports took work. Placing in local races, conference-wide track meets, and beating personal records are things that I don't take for granted and came from hard work on my own terms.
+      <!-- Lorem ipsum dolor sit amet, quot dolor repudiandae an per, justo facilisis no eam. Dolore nonumy salutandi ad usu, cu vel dico nusquam. Ea eos mundi everti definitionem, unum novum phaedrum nam ut. Similique vituperata disputationi vim id, cu sit eligendi periculis. Reque inani pri ex, nobis deleniti eum ut. -->
+    </div>
+    <div class="social">
+      <div class"midClass">
+        <a href="https://twitter.com/SpinelliMatt"><p>Twitter</p></a>
+        <a href="https://instagram.com/matts999"><p>Instagram</p></a>
+      </div>
+    </div>
+    <div class="music">
+      <h3 class="header">Music</h3>
+      Music is the thing that occupies the largest part of my life during the school year. I am a bass and vocal percussionist in the GHS Chamber choir, a group that has won 1st place at the Berklee Jazz Festival, and I am involved in the massive spring musicals at the school, where I am an auditorium manager, technical director, sound engineer and manager, and more.
+      <!-- Lorem ipsum dolor sit amet, quot dolor repudiandae an per, justo facilisis no eam. Dolore nonumy salutandi ad usu, cu vel dico nusquam. Ea eos mundi everti definitionem, unum novum phaedrum nam ut. Similique vituperata disputationi vim id, cu sit eligendi periculis. Reque inani pri ex, nobis deleniti eum ut. -->
+    </div>
+
+  </div>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  body{
+        text-align:  center; color: white; font-weight: 400;
+        background: #27292d;
+        font-family: 'Montserrat', sans-serif;
+
+        /* This centers our sketch horizontally. */
+        justify-content: center;
+        /* This centers our sketch vertically. */
+        align-items: center;
+    }
+  .land{
+    font-family: inherit;
+    width: 100%;  height: 95%;
+    position: relative;
+    background: #27292d;
+    /* background-image: url("Images/IMG_2800.JPG");  background-size: cover;  background-position: top; */
+    font-size: 62px;
+    text-align: right;
+  }
+  .c1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-51%,-50%);
+    display: inline-block;
+    margin: 0px auto;
+  }
+  .name{
+    color: #59c4ec;
+    font-size: 256px;
+    letter-spacing: 10px;
+  }
+  .sub{
+    font-size: 20px;
+    width: 1330px;
+    text-align: right;
+    float: right;
+    margin: 15px;
+  }
+
+  .box{
+    width: 100%;
+    height: 5%;
+  }
+
+  .me{
+      font-size: 42px;
+    }
+  /* Start style for me personal */
+  .dad{
+    width: 75%;
+    height: 90%;
+    margin: 0 auto;
+    /* border: 5px solid white; */
+    border: 5px solid #27292d;
+    padding: 10px;
+    font-size: 26px;
+  }
+  .dad a{
+    color:#fd4a6c;
+    font-weight: 500;
+  }
+  .code{
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 60%;
+    background: #ececec;
+    border-radius: 3%;
+    border:inherit;
+    color: #ececec;
+    font-size: 0px;
+    -webkit-transition: color 1s, font-size 0.5s; /* Safari */
+    transition: color 1s, font-size 0.5s;
+  }
+  .code:hover{
+    font-size: 26px;
+    color: #27292d;
+  }
+  .math{
+    display: inline-block;
+    width:40%;
+    height: 40%;
+    background: #454850;
+    float: none;
+    border:inherit;
+    border-radius: 3%;
+    color: #454850;
+    font-size: 0px;
+    -webkit-transition: color 1s, font-size 0.5s; /* Safari */
+    transition: color 1s, font-size 0.5s;
+  }
+  .math:hover{
+    font-size: 26px;
+    color: #ececec;
+  }
+  .social{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fd4a6c;
+    float: left;
+    -webkit-transition: width 2s, height 2s,border-radius 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s,border-radius 2s, transform 2s;
+  }
+  .social:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 3%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  .social a{
+    display: table-cell;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ececec;
+    font-size: 0px;
+    font-weight: 600;
+    -webkit-transition-delay: 1.5s; /* Safari */
+    transition-delay: 1.5s;
+    -webkit-transition: font-size 2s, color 0.3s;
+    transition: font-size 2s, color 0.3s;
+  }
+  .social:hover a{
+    font-size: 48px;
+  }
+  .social a:hover{
+    color: #59c4ec;
+  }
+  .midClass{
+    display: table;
+    height: 300px;
+  }
+  .run{
+    display: inline-block;
+    width: 50%;
+    height: 40%;
+    background: #59c4ec;
+    border:inherit;
+    border-radius: 3%;
+    color: #59c4ec;
+    font-size: 0px;
+    -webkit-transition: color 1s, font-size 0.5s; /* Safari */
+    transition: color 1s, font-size 0.5s;
+  }
+  .run:hover{
+    font-size: 26px;
+    color: #ececec;
+  }
+  .music{
+    display: inline-block;
+    float: left;
+    width: 75%;
+    height: 27%;
+    background: #565a63;
+    border:inherit;
+    border-radius: 3%;
+    color: #565a63;
+    font-size: 0px;
+    -webkit-transition: color 1s, font-size 0.5s; /* Safari */
+    transition: color 1s, font-size 0.5s;
+  }
+  .music:hover{
+    font-size: 26px;
+    color: #ececec;
+  }
+  .header{
+    font-size: 38px;
+    letter-spacing: normal;
+    -webkit-transition: letter-spacing 1s; /* Safari */
+    transition: letter-spacing 1s;
+  }
+  .code:hover .header{
+    letter-spacing: 15px;
+  }
+  .math:hover .header{
+    letter-spacing: 15px;
+  }
+  .run:hover .header{
+    letter-spacing: 15px;
+  }
+  .music:hover .header{
+    letter-spacing: 15px;
+  }
+</style>
+</body>
+</html>
