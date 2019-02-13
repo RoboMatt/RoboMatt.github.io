@@ -1,0 +1,102 @@
+/* General Settings */
+*{
+  font-family: sans-serif, 'Montserrat';
+  text-align:  center;
+}
+body{
+  margin: 0;
+}
+.outer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+.inner{
+  margin: auto;
+}
+/* Landing Page Settings */
+.name1{
+  font-weight: 700;
+  font-size: 72px;
+  color: #292929;
+}
+#landing{
+  background-image: url("triRobo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sub{
+  font-family: sans-serif, 'Montserrat';
+  font-size: 24px;
+  height: 24px;
+  font-weight: 100;
+  color: #292929;
+}
+
+/* Page #2 Settings */
+#first{
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+}
+#first .inner{
+  width: 50%;
+}
+
+#first .title{
+  color: #e88072;
+  font-size: 56px;
+  font-weight: 700;
+}
+#first .details{
+  color: rgb(39, 41, 45);
+  font-size: 24px;
+  display: block;
+}
+.inner img{
+  height: auto;
+  width: auto;
+}
+.inner a{
+  color: rgba(255, 255, 255, 0);
+}
+@keyframes hoverImg {
+  0% {
+    transform: rotateZ(0deg);
+    transform: translateY(0%);
+  }
+  50%{
+    transform: rotateZ(180deg);
+    transform: translateY(-35%);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    transform: translateY(0%);
+  }
+}
+.inner img:hover{
+  animation: 1s ease-out 0s 1 hoverImg;
+}
+.socials{
+  display: block;
+  flex-grow: 1;
+}
+.down{
+  bottom: 0;
+  color: #4f5052;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+/* Page 3 Settings */
+#second{
+  background-color: #8fd4ed;
+}
+#second .title{
+  color: #ececec;
+  font-size: 56px;
+  font-weight: 700;
+}
